@@ -1,0 +1,21 @@
+et salaryObj = {
+  programmers: [
+    { name: "Dmitriy", money: 1000 },
+    { name: "Alexey", money: 1500 },
+    { name: "Andrew", money: 2000 },
+    { name: "Anna", money: 2500 },
+    { name: "Elizaveta", money: 3000 }
+  ]
+};
+
+function getSalarySum(salaryObj) {
+  let sum = 0;
+
+  salaryObj.programmers.forEach(function (el) {
+    sum += el.money;
+  });
+
+  return sum;
+}
+
+console.log(getSalarySum(salaryObj));
